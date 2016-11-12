@@ -47,11 +47,11 @@
 // Descomente a linha correspondente ao seu idioma.
 // Uncomment the line corresponding to your language.
 
-//#define ENGLISH    // If this program is useful for you, make a donation to help with development. Paypal: fefegarcia_1@hotmail.com
+#define ENGLISH    // If this program is useful for you, make a donation to help with development. Paypal: fefegarcia_1@hotmail.com
 //#define FRENCH     // Si ce programme est utile pour vous, faire un don pour aider au développement. Paypal: fefegarcia_1@hotmail.com
 //#define GERMAN     // Wenn dieses Programm ist nützlich für Sie, eine Spende an mit Entwicklung zu helfen. Paypal: fefegarcia_1@hotmail.com
 //#define ITALIAN    // Se questo programma vi è utile, fate una donazione per aiutare con il suo sviluppo. Paypal: fefegarcia_1@hotmail.com
-#define PORTUGUESE   // Se este programa é útil para você, faça uma doação para ajudar no desenvolvimento. Paypal: fefegarcia_1@hotmail.com
+//#define PORTUGUESE   // Se este programa é útil para você, faça uma doação para ajudar no desenvolvimento. Paypal: fefegarcia_1@hotmail.com
 //#define SPANISH    // Si este programa es útil para usted, hacer una donación para ayudar con el desarrollo. Paypal: fefegarcia_1@hotmail.com
 
 //*************************************************************************************************
@@ -92,7 +92,7 @@
 
 // Comente esta linha para desativar as mensagens no monitor serial ou para usar os pinos 0 e 1 (RX e TX) como OUTPUT
 // Comment this line to disable the messages on serial monitor or to use pins 0 and 1 (RX e TX) as OUTPUT
-#define DEBUG  // Comente esta linha para usar os pinos 0 e 1 para controle dos coolers e buzzer.
+//#define DEBUG  // Comente esta linha para usar os pinos 0 e 1 para controle dos coolers e buzzer.
 
 // Comment the line below to disable this function
 // Comente a linha abaixo para desativar esta função
@@ -101,7 +101,7 @@
 
 // Comment this line to enable password screen
 // Comente esta linha para ativar a solicitação de senha.
-//#define SKIP_PASSWORD_SCREEN // comente esta linha se deseja solicitar uma senha após o primeiro toque no TFT
+#define SKIP_PASSWORD_SCREEN // comente esta linha se deseja solicitar uma senha após o primeiro toque no TFT
 
 // Comment this line to use static IP.
 // Comente esta linha para usar IP estático
@@ -125,14 +125,14 @@
 #define USE_PINS_18_AND_19_FOR_RTC // Descomente esta linha para usar os pinos 18 e 19 para o RTC e comente para usar os pinos 20 e 21 para o RTC.
 
 // Uncomment the line below if you are using a TFT shield.
-//#define USE_TFT_SHIELD // Descomente esta linha se você estiver usando um "TFT shield".
+#define USE_TFT_SHIELD // Descomente esta linha se você estiver usando um "TFT shield".
 
 // Uncomment the line below if you have the  SD card on ethernet shield.
 //#define USE_PIN_4_FOR_SD_CARD // Descomente esta linha se você tem o cartão SD conectado no "ethernet shield".
 
 // Uncomment the line below if you have the  SD card on TFT
 // Do not uncomment this line when using Ferduino Mega 2560
-//#define USE_PIN_53_FOR_SD_CARD // Descomente esta linha se você tem o cartão SD conectado no TFT. Não descomente esta linha se estiver usando um Ferduino Mega 2560
+#define USE_PIN_53_FOR_SD_CARD // Descomente esta linha se você tem o cartão SD conectado no TFT. Não descomente esta linha se estiver usando um Ferduino Mega 2560
 
 //*************************************************************************************************
 //*************** Bibliotecas utilizadas **********************************************************
@@ -345,7 +345,7 @@ Time t_temp, t;
 //********************** Variáveis das fuções do touch screen e tela inicial ****************************
 //*******************************************************************************************************
 #ifdef USE_TFT // Do not change this line
-UTFT        myGLCD(ITDB32WD, 38, 39, 40, 41); // "ITDB32WD" é o modelo do LCD
+UTFT        myGLCD(CTE50, 38, 39, 40, 41); // "ITDB32WD" é o modelo do LCD
 #ifdef USE_TFT_SHIELD // Do not change this line
 UTouch      myTouch(6,5,4,3,2);              // Pinos usados pelo "touch" no TFT shield
 #else // Do not change this line
