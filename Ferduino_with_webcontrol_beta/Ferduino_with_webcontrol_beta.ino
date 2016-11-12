@@ -63,21 +63,21 @@
 // Essa função minimiza problemas com o travamento do código mas, pode apresentar incompatibilidades com alguns bootloaders
 
 // Comment the line below to disable ethernet functions
-#define ETHERNET_SHIELD // Comente esta linha para desativar as funções do ethernet shield.
+//#define ETHERNET_SHIELD // Comente esta linha para desativar as funções do ethernet shield.
 
 // Comment this two lines below if have not stamps
 // Comente as duas linhas abaixo se não tiver stamps
-#define STAMPS_V4X     // Comente esta linha para usar Stamps EZO
+//#define STAMPS_V4X     // Comente esta linha para usar Stamps EZO
 //#define STAMPS_EZO     // Descomente esta linha para usar Stamps EZO
 
 // Comment the line below if you haven't a stamp for tank pH.
-#define USE_STAMP_FOR_TANK_PH // Comente esta linha se você não tem um "stamp" para o pH do aquário.
+//#define USE_STAMP_FOR_TANK_PH // Comente esta linha se você não tem um "stamp" para o pH do aquário.
 
 // Comment the line below if you haven't a stamp for calcium reactor.
-#define USE_STAMP_FOR_CALCIUM_REACTOR // Comente esta linha se você não tem um "stamp" para o reator de cálcio.
+//#define USE_STAMP_FOR_CALCIUM_REACTOR // Comente esta linha se você não tem um "stamp" para o reator de cálcio.
 
 // Comment the line below if you haven't a stamp for ORP.
-#define USE_STAMP_FOR_ORP // Comente esta linha se você não tem um "stamp" para a ORP.
+//#define USE_STAMP_FOR_ORP // Comente esta linha se você não tem um "stamp" para a ORP.
 
 // Comment the line below if you haven't a stamp for density.
 //#define USE_STAMP_FOR_DENSITY // Comente esta linha se você não tem um "stamp" para a densidade.
