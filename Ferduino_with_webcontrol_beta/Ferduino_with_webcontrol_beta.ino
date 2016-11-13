@@ -305,8 +305,9 @@ const byte temporizador3 = 7;       // P7       // Pino que liga o timer 3.
 const byte temporizador4 = 8;       // P8       // Pino que liga o timer 4.
 const byte temporizador5 = 9;       // P9       // Pino que liga o timer 5.
 const byte solenoide1Pin = 10;      // P10      // Liga a reposicao de água doce.
-const byte alimentadorPin = 11;     // P11      // Pino que controla o alimentador automático.
-const byte skimmerPin = 12;         // P12      // Pino que controla o skimmer
+const byte skimmerPin = 11;         // P11      // Pino que controla o skimmer
+const byte alimentadorPin = 12;     // P12      // Pino que controla o alimentador automático.
+
 #endif // Do not change this line!
 //****************************************************************************************************
 //***************** Variáveis dos sensores de temperatura ********************************************
